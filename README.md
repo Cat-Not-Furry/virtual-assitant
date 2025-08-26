@@ -88,7 +88,7 @@ sudo (tu gestor de paquetes) portaudio espeak-ng playerctl
 ```
 
 ### Instalar Piper TTS (binario pre-compilado recomendado)
-### Descargar el archivo (tu arquitectura)-linux-gnu.tar.gz desde la página de releases de <a href="https://github.com/rhasspy/piper/releases">Piper</a>
+Descargar el archivo (tu arquitectura)-linux-gnu.tar.gz desde la página de releases de <a href="https://github.com/rhasspy/piper/releases">Piper</a>
 
 ```bash
 tar -xvf piper_*.tar.gz
@@ -107,7 +107,7 @@ Actualiza la ruta en el script.</h3>
 ```
 
 ## 5. Configuración de Claves y Huella de Voz
-<h3>Claves API: Edita asistente.py y añade tus claves para TU_CLAVE_DE_PICOVOICE.<br>
+<h3>Claves API: Edita asistente.py y añade tus claves para <a href="https://console.picovoice.ai/signup">TU_CLAVE_DE_PICOVOICE</a>.<br>
 Huella de Voz:<br>
 Ejecuta el script crear_huella.py:<br>
 <br>
