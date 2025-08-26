@@ -31,7 +31,7 @@ Audio I/O: PyAudio</h3>
 ### Instalar pyenv y dependencias para compilar Python
 
 ```bash
-sudo (tu gestor de paquetes) pyenv base-devel openssl zlib xz tk
+sudo (tu gestor de paquetes) install pyenv base-devel openssl zlib xz tk
 ```
 
 ### Configurar pyenv en tu shell (añadir a ~/.bashrc o ~/.zshrc)
@@ -97,14 +97,19 @@ sudo ln -s /opt/piper/piper /usr/local/bin/piper
 
 ## 4. Descargar Modelos
 <h3>Este proyecto requiere varios modelos que no se incluyen en el repositorio.<br>
-Modelo Vosk (STT): Descarga un modelo en español desde Vosk Models y descomprímelo en la raíz del proyecto.<br>
-Modelo Piper (TTS): Descarga un modelo de voz en español desde Piper Samples y colócalo en una carpeta.<br>
+Modelo Vosk (STT): Descarga un modelo en español desde <a href="https://alphacephei.com/vosk/models">Vosk Models</a> y descomprímelo en la raíz del proyecto.<br>
+Modelo Piper (TTS): Descarga un modelo de voz en español desde <a href="https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_MX/ald/medium">Piper Samples</a> y colócalo en una carpeta.<br>
 Actualiza la ruta en el script.</h3>
 
 ## 5. Configuración de Claves y Huella de Voz
 <h3>Claves API: Edita asistente.py y añade tus claves para TU_CLAVE_DE_PICOVOICE.<br>
 Huella de Voz:<br>
-Ejecuta el script crear_huella.py: python crear_huella.py.<br>
+Ejecuta el script crear_huella.py:<br> 
+
+```bash
+python crear_huella.py
+```
+
 Sigue las instrucciones para grabar tu voz.<br>
 Esto generará el archivo mi_huella.pt, que el asistente principal usará para reconocerte.<br>
 Uso<br>
