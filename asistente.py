@@ -334,7 +334,7 @@ try:
                 continue # Y continuamos el bucle principal
             else:
                 # Si no está leyendo, rompemos el bucle para salir
-                raise KeyboardInterrupt # Lanzamos la excepción de nuevo para que la capture el try/except externo
+                raise KeyboardInterrupt # No temas, lanzamos la excepción de nuevo para que la capture el try/except externo, por lo mismo ver este error es normal : ).
 
 finally:
     # Este bloque se ejecuta al final, sin importar cómo salimos del bucle
