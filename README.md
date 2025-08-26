@@ -1,14 +1,15 @@
-## Asistente de Voz "Jarvis" para Linux
-### Un asistente de voz personal, offline-first y altamente personalizable, construido con Python para sistemas GNU/Linux.<br>Se activa con una palabra clave, verifica la identidad del hablante mediante una huella de voz y ejecuta una variedad de comandos, desde abrir aplicaciones hasta leer libros en voz alta.
+## Asistente de Voz "Jarvis" para Linux<br>
 
-<h3>Características Principales
+Un asistente de voz personal, offline-first y altamente personalizable, construido con Python para sistemas GNU/Linux.<br>Se activa con una palabra clave, verifica la identidad del hablante mediante una huella de voz y ejecuta una variedad de comandos, desde abrir aplicaciones hasta leer libros en voz alta.<br>
+<br>
+Características Principales:
 Palabra de Activación (Wake Word): Utiliza pvporcupine para una detección de la palabra "Jarvis" de bajo consumo y siempre activa.<br>
 Reconocimiento de Voz Offline: Emplea vosk para una transcripción de voz a texto rápida y privada, sin depender de la nube.<br>
 Verificación de Hablante: Usa speechbrain para crear una huella de voz única, asegurando que el asistente solo responda a su propietario.<br>
 Voz Natural (TTS): Integra piper-tts para generar respuestas habladas con una voz fluida y de alta calidad, funcionando completamente offline.<br>
 Lector de Libros: Capaz de leer archivos .txt, .pdf y .epub en un hilo secundario, permitiendo la interrupción por voz o con Ctrl+C.<br>
 Control del Sistema: Abre aplicaciones, controla la reproducción multimedia (playerctl, si tu distro lo tiene) y realiza búsquedas en la web.<br>
-Modular y Extensible: Añadir nuevos comandos es tan simple como definir una función y registrarla en un diccionario.</h3>
+Modular y Extensible: Añadir nuevos comandos es tan simple como definir una función y registrarla en un diccionario.
 
 <h3>Requisitos<br>
 Lenguaje: Python 3.11<br>
@@ -101,11 +102,16 @@ Modelo Vosk (STT): Descarga un modelo en español desde <a href="https://alphace
 Modelo Piper (TTS): Descarga un modelo de voz en español desde <a href="https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_MX/ald/medium">Piper Samples</a> y colócalo en una carpeta.<br>
 Actualiza la ruta en el script.</h3>
 
+```python
+/home/usuario/la/carpeta/para/piper.onnx
+```
+
 ## 5. Configuración de Claves y Huella de Voz
 <h3>Claves API: Edita asistente.py y añade tus claves para TU_CLAVE_DE_PICOVOICE.<br>
 Huella de Voz:<br>
-Ejecuta el script crear_huella.py:<br> 
-
+Ejecuta el script crear_huella.py:<br>
+<br>
+    
 ```bash
 python crear_huella.py
 ```
